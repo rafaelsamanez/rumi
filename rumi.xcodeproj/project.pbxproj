@@ -15,6 +15,9 @@
 		5315D390229A3C5F007D31C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5315D38E229A3C5F007D31C4 /* LaunchScreen.storyboard */; };
 		5315D39B229A3C5F007D31C4 /* rumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315D39A229A3C5F007D31C4 /* rumiTests.swift */; };
 		5315D3A6229A3C5F007D31C4 /* rumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315D3A5229A3C5F007D31C4 /* rumiUITests.swift */; };
+		53458943229D965000FF8AE1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53458942229D965000FF8AE1 /* Group.swift */; };
+		53458945229D967200FF8AE1 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53458944229D967200FF8AE1 /* Participant.swift */; };
+		53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5315D3A1229A3C5F007D31C4 /* rumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rumiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5315D3A5229A3C5F007D31C4 /* rumiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rumiUITests.swift; sourceTree = "<group>"; };
 		5315D3A7229A3C5F007D31C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53458942229D965000FF8AE1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		53458944229D967200FF8AE1 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				5315D381229A3C5D007D31C4 /* rumi */,
+				5345893E229D907E00FF8AE1 /* Main */,
+				5345893F229D908900FF8AE1 /* Resource */,
+				5315D391229A3C5F007D31C4 /* Info.plist */,
 				5315D399229A3C5F007D31C4 /* rumiTests */,
 				5315D3A4229A3C5F007D31C4 /* rumiUITests */,
 				5315D380229A3C5D007D31C4 /* Products */,
@@ -99,13 +108,10 @@
 		5315D381229A3C5D007D31C4 /* rumi */ = {
 			isa = PBXGroup;
 			children = (
-				5315D382229A3C5D007D31C4 /* AppDelegate.swift */,
+				5345893C229D906000FF8AE1 /* Network */,
+				53458940229D909D00FF8AE1 /* ViewController */,
 				5315D384229A3C5D007D31C4 /* ViewController.swift */,
-				5315D386229A3C5D007D31C4 /* Main.storyboard */,
-				5315D38C229A3C5F007D31C4 /* Assets.xcassets */,
-				5315D38E229A3C5F007D31C4 /* LaunchScreen.storyboard */,
-				5315D391229A3C5F007D31C4 /* Info.plist */,
-				5315D389229A3C5D007D31C4 /* rumi.xcdatamodeld */,
+				5345893D229D907300FF8AE1 /* Model */,
 			);
 			path = rumi;
 			sourceTree = "<group>";
@@ -126,6 +132,51 @@
 				5315D3A7229A3C5F007D31C4 /* Info.plist */,
 			);
 			path = rumiUITests;
+			sourceTree = "<group>";
+		};
+		5345893C229D906000FF8AE1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		5345893D229D907300FF8AE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5315D389229A3C5D007D31C4 /* rumi.xcdatamodeld */,
+				53458942229D965000FF8AE1 /* Group.swift */,
+				53458944229D967200FF8AE1 /* Participant.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5345893E229D907E00FF8AE1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5315D382229A3C5D007D31C4 /* AppDelegate.swift */,
+			);
+			name = Main;
+			path = rumi;
+			sourceTree = "<group>";
+		};
+		5345893F229D908900FF8AE1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5315D386229A3C5D007D31C4 /* Main.storyboard */,
+				5315D38C229A3C5F007D31C4 /* Assets.xcassets */,
+				5315D38E229A3C5F007D31C4 /* LaunchScreen.storyboard */,
+			);
+			name = Resource;
+			path = rumi;
+			sourceTree = "<group>";
+		};
+		53458940229D909D00FF8AE1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +312,10 @@
 			files = (
 				5315D385229A3C5D007D31C4 /* ViewController.swift in Sources */,
 				5315D383229A3C5D007D31C4 /* AppDelegate.swift in Sources */,
+				53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */,
+				53458945229D967200FF8AE1 /* Participant.swift in Sources */,
 				5315D38B229A3C5D007D31C4 /* rumi.xcdatamodeld in Sources */,
+				53458943229D965000FF8AE1 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
