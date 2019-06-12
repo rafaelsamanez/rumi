@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3475E146CAE03CBF3475ABA1 /* libPods-rumi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD0B9D87A4C29B8C7F389DC /* libPods-rumi.a */; };
 		5315D383229A3C5D007D31C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315D382229A3C5D007D31C4 /* AppDelegate.swift */; };
 		5315D385229A3C5D007D31C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315D384229A3C5D007D31C4 /* ViewController.swift */; };
 		5315D388229A3C5D007D31C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5315D386229A3C5D007D31C4 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AD0B9D87A4C29B8C7F389DC /* libPods-rumi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rumi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F153F6D12DD4E4DA21339EE /* Pods-rumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rumi.debug.xcconfig"; path = "Target Support Files/Pods-rumi/Pods-rumi.debug.xcconfig"; sourceTree = "<group>"; };
 		5315D37F229A3C5D007D31C4 /* rumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5315D382229A3C5D007D31C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5315D384229A3C5D007D31C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		53458942229D965000FF8AE1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		53458944229D967200FF8AE1 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsResponse.swift; sourceTree = "<group>"; };
+		DB5BDB50C39221149DA16246 /* Pods-rumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rumi.release.xcconfig"; path = "Target Support Files/Pods-rumi/Pods-rumi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3475E146CAE03CBF3475ABA1 /* libPods-rumi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 				5315D399229A3C5F007D31C4 /* rumiTests */,
 				5315D3A4229A3C5F007D31C4 /* rumiUITests */,
 				5315D380229A3C5D007D31C4 /* Products */,
+				C179C484E90E41CD4DC1F67F /* Pods */,
+				BB73105738A13702474A3334 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +186,24 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		BB73105738A13702474A3334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AD0B9D87A4C29B8C7F389DC /* libPods-rumi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C179C484E90E41CD4DC1F67F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F153F6D12DD4E4DA21339EE /* Pods-rumi.debug.xcconfig */,
+				DB5BDB50C39221149DA16246 /* Pods-rumi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5315D3AA229A3C5F007D31C4 /* Build configuration list for PBXNativeTarget "rumi" */;
 			buildPhases = (
+				66E943821A1B65450F27FAE8 /* [CP] Check Pods Manifest.lock */,
 				5315D37B229A3C5D007D31C4 /* Sources */,
 				5315D37C229A3C5D007D31C4 /* Frameworks */,
 				5315D37D229A3C5D007D31C4 /* Resources */,
@@ -304,6 +330,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66E943821A1B65450F27FAE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rumi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5315D37B229A3C5D007D31C4 /* Sources */ = {
@@ -488,15 +539,17 @@
 		};
 		5315D3AB229A3C5F007D31C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F153F6D12DD4E4DA21339EE /* Pods-rumi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN83CAA4H3;
 				INFOPLIST_FILE = rumi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rafael.rumi;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.rumi.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,15 +558,17 @@
 		};
 		5315D3AC229A3C5F007D31C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5BDB50C39221149DA16246 /* Pods-rumi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PN83CAA4H3;
 				INFOPLIST_FILE = rumi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rafael.rumi;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.rumi.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

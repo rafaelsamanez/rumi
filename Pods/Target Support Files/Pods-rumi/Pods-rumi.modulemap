@@ -1,0 +1,6 @@
+module Pods_rumi {
+  umbrella header "Pods-rumi-umbrella.h"
+
+  export *
+  module * { export * }
+}
