@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="-2554" y="982"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Owner View Controller-->
         <scene sceneID="OMx-0N-mUA">
             <objects>
-                <viewController id="U96-bd-lBT" sceneMemberID="viewController">
+                <viewController id="U96-bd-lBT" customClass="LoginOwnerViewController" customModule="rumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jyl-XZ-1ey">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +83,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="INICIAR SESION"/>
                                 <connections>
+                                    <action selector="signIn:" destination="U96-bd-lBT" eventType="touchUpInside" id="PJf-bP-53x"/>
                                     <segue destination="ka6-T1-Iq5" kind="show" id="tzv-Nv-IDy"/>
                                 </connections>
                             </button>
@@ -95,7 +96,7 @@
                                     <segue destination="foL-Ea-DO9" kind="show" id="pIi-au-hE7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contrase;a" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yn-pZ-TUT">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yn-pZ-TUT">
                                 <rect key="frame" x="51" y="209" width="272" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -107,6 +108,8 @@
                         <viewLayoutGuide key="safeArea" id="M0a-JE-uLI"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="IlG-Nw-msj" id="Uek-sg-xTc"/>
+                        <outlet property="passwordTextField" destination="7yn-pZ-TUT" id="Voi-lM-CTd"/>
                         <outlet property="searchDisplayController" destination="Lxl-Ia-kDl" id="q6l-zZ-vgE"/>
                     </connections>
                 </viewController>
@@ -122,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="-850" y="-4"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Owner View Controller-->
         <scene sceneID="gVb-pC-j99">
             <objects>
-                <viewController id="foL-Ea-DO9" sceneMemberID="viewController">
+                <viewController id="foL-Ea-DO9" customClass="RegisterOwnerViewController" customModule="rumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b1x-Kd-UIM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +181,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="REGISTRARTE AHORA"/>
                                 <connections>
+                                    <action selector="signUp:" destination="foL-Ea-DO9" eventType="touchUpInside" id="kSz-NF-SYF"/>
                                     <segue destination="ka6-T1-Iq5" kind="show" id="C6m-3z-H2d"/>
                                 </connections>
                             </button>
@@ -185,6 +189,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PVW-9y-UFG"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="mK4-2o-dTX" id="pAc-1L-fC9"/>
+                        <outlet property="genderTextField" destination="SKF-E1-fc6" id="UBI-is-Ndl"/>
+                        <outlet property="nameTextField" destination="tmu-Od-jtr" id="KgB-hJ-Rwg"/>
+                        <outlet property="passwordTextField" destination="Ggb-ND-nrj" id="Ivn-op-Dc2"/>
+                        <outlet property="surnameTextField" destination="IBU-T3-qeN" id="mid-HR-zMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzq-zl-ucR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -457,10 +468,10 @@
             </objects>
             <point key="canvasLocation" x="2681" y="1604"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Roomer View Controller-->
         <scene sceneID="yAn-pg-F5M">
             <objects>
-                <viewController id="nXT-4e-pdZ" sceneMemberID="viewController">
+                <viewController id="nXT-4e-pdZ" customClass="LoginRoomerViewController" customModule="rumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eme-ti-SIc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,13 +512,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="INICIAR SESION"/>
                                 <connections>
-                                    <segue destination="DA4-yw-7sv" kind="show" id="wTQ-K5-SEt"/>
+                                    <action selector="signIn:" destination="nXT-4e-pdZ" eventType="touchUpInside" id="g5V-XS-8h8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Zfe-Sj-dX2"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="FaV-xm-tEM" id="utd-cW-nqA"/>
+                        <outlet property="passwordTextField" destination="RAn-Yx-AZI" id="EHW-bL-W1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjE-Ke-TJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -516,7 +531,7 @@
         <!--Registrate Ahora-->
         <scene sceneID="1oR-IW-SOm">
             <objects>
-                <viewController title="Registrate Ahora" id="zGy-Yg-ZL8" sceneMemberID="viewController">
+                <viewController title="Registrate Ahora" id="zGy-Yg-ZL8" customClass="RegisterRoomerViewController" customModule="rumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UrE-hv-v3f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -569,6 +584,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="REGISTRARTE AHORA"/>
                                 <connections>
+                                    <action selector="signUp:" destination="zGy-Yg-ZL8" eventType="touchUpInside" id="nk9-hH-fA2"/>
                                     <segue destination="DA4-yw-7sv" kind="show" id="fEt-3l-djW"/>
                                 </connections>
                             </button>
@@ -576,15 +592,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fkv-r8-IqX"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="tbA-FI-r4x" id="vDp-Rs-ZEh"/>
+                        <outlet property="genderTextField" destination="yHi-HV-1XZ" id="dap-B8-WB8"/>
+                        <outlet property="nameTextField" destination="78q-dz-K9Q" id="jbI-Am-o12"/>
+                        <outlet property="passwordTextField" destination="Gr4-f3-WeP" id="sHd-9L-6GB"/>
+                        <outlet property="surnameTextField" destination="GYl-PM-QoZ" id="AfD-uQ-Fw6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSk-Kz-dOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-850" y="2416"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Roomer View Controller-->
         <scene sceneID="tUz-1t-q8H">
             <objects>
-                <tabBarController id="DA4-yw-7sv" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarRoomerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DA4-yw-7sv" customClass="TabBarRoomerViewController" customModule="rumi" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DJs-rL-L4f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -663,7 +686,6 @@
         <image name="info" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fEt-3l-djW"/>
         <segue reference="C6m-3z-H2d"/>
     </inferredMetricsTieBreakers>
 </document>

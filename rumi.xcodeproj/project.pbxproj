@@ -19,6 +19,17 @@
 		53458943229D965000FF8AE1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53458942229D965000FF8AE1 /* Group.swift */; };
 		53458945229D967200FF8AE1 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53458944229D967200FF8AE1 /* Participant.swift */; };
 		53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */; };
+		F0E0CAA522B1C3BD00DB2EB0 /* LoginOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAA422B1C3BD00DB2EB0 /* LoginOwnerViewController.swift */; };
+		F0E0CAA922B1C62200DB2EB0 /* AccountApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAA822B1C62200DB2EB0 /* AccountApi.swift */; };
+		F0E0CAAB22B1C68500DB2EB0 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAAA22B1C68500DB2EB0 /* LoginResponse.swift */; };
+		F0E0CAAD22B1C75100DB2EB0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAAC22B1C75100DB2EB0 /* Profile.swift */; };
+		F0E0CAAF22B1C7B200DB2EB0 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAAE22B1C7B200DB2EB0 /* LoginRequest.swift */; };
+		F0E0CAB122B1D03100DB2EB0 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAB022B1D03100DB2EB0 /* RegisterRequest.swift */; };
+		F0E0CAB322B1D13D00DB2EB0 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAB222B1D13D00DB2EB0 /* RegisterResponse.swift */; };
+		F0E0CAB522B1D4BB00DB2EB0 /* RegisterOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAB422B1D4BB00DB2EB0 /* RegisterOwnerViewController.swift */; };
+		F0E0CAB722B204B700DB2EB0 /* LoginRoomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAB622B204B700DB2EB0 /* LoginRoomerViewController.swift */; };
+		F0E0CAB922B207F100DB2EB0 /* RegisterRoomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CAB822B207F100DB2EB0 /* RegisterRoomerViewController.swift */; };
+		F0E0CABB22B2173A00DB2EB0 /* TabBarRoomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0CABA22B2173A00DB2EB0 /* TabBarRoomerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +70,17 @@
 		53458944229D967200FF8AE1 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsResponse.swift; sourceTree = "<group>"; };
 		DB5BDB50C39221149DA16246 /* Pods-rumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rumi.release.xcconfig"; path = "Target Support Files/Pods-rumi/Pods-rumi.release.xcconfig"; sourceTree = "<group>"; };
+		F0E0CAA422B1C3BD00DB2EB0 /* LoginOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOwnerViewController.swift; sourceTree = "<group>"; };
+		F0E0CAA822B1C62200DB2EB0 /* AccountApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApi.swift; sourceTree = "<group>"; };
+		F0E0CAAA22B1C68500DB2EB0 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F0E0CAAC22B1C75100DB2EB0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F0E0CAAE22B1C7B200DB2EB0 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F0E0CAB022B1D03100DB2EB0 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		F0E0CAB222B1D13D00DB2EB0 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		F0E0CAB422B1D4BB00DB2EB0 /* RegisterOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOwnerViewController.swift; sourceTree = "<group>"; };
+		F0E0CAB622B204B700DB2EB0 /* LoginRoomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoomerViewController.swift; sourceTree = "<group>"; };
+		F0E0CAB822B207F100DB2EB0 /* RegisterRoomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRoomerViewController.swift; sourceTree = "<group>"; };
+		F0E0CABA22B2173A00DB2EB0 /* TabBarRoomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRoomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +166,10 @@
 		5345893C229D906000FF8AE1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F0E0CAA722B1C50700DB2EB0 /* Requests */,
+				F0E0CAA622B1C4F900DB2EB0 /* Responses */,
 				53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */,
+				F0E0CAA822B1C62200DB2EB0 /* AccountApi.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 				5315D389229A3C5D007D31C4 /* rumi.xcdatamodeld */,
 				53458942229D965000FF8AE1 /* Group.swift */,
 				53458944229D967200FF8AE1 /* Participant.swift */,
+				F0E0CAAC22B1C75100DB2EB0 /* Profile.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -182,6 +208,11 @@
 		53458940229D909D00FF8AE1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F0E0CAA422B1C3BD00DB2EB0 /* LoginOwnerViewController.swift */,
+				F0E0CAB422B1D4BB00DB2EB0 /* RegisterOwnerViewController.swift */,
+				F0E0CAB622B204B700DB2EB0 /* LoginRoomerViewController.swift */,
+				F0E0CAB822B207F100DB2EB0 /* RegisterRoomerViewController.swift */,
+				F0E0CABA22B2173A00DB2EB0 /* TabBarRoomerViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -200,8 +231,25 @@
 				3F153F6D12DD4E4DA21339EE /* Pods-rumi.debug.xcconfig */,
 				DB5BDB50C39221149DA16246 /* Pods-rumi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0E0CAA622B1C4F900DB2EB0 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				F0E0CAAA22B1C68500DB2EB0 /* LoginResponse.swift */,
+				F0E0CAB222B1D13D00DB2EB0 /* RegisterResponse.swift */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		F0E0CAA722B1C50700DB2EB0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F0E0CAAE22B1C7B200DB2EB0 /* LoginRequest.swift */,
+				F0E0CAB022B1D03100DB2EB0 /* RegisterRequest.swift */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,12 +409,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E0CAB722B204B700DB2EB0 /* LoginRoomerViewController.swift in Sources */,
+				F0E0CABB22B2173A00DB2EB0 /* TabBarRoomerViewController.swift in Sources */,
 				5315D385229A3C5D007D31C4 /* ViewController.swift in Sources */,
+				F0E0CAAD22B1C75100DB2EB0 /* Profile.swift in Sources */,
+				F0E0CAB122B1D03100DB2EB0 /* RegisterRequest.swift in Sources */,
 				5315D383229A3C5D007D31C4 /* AppDelegate.swift in Sources */,
+				F0E0CAAB22B1C68500DB2EB0 /* LoginResponse.swift in Sources */,
+				F0E0CAA922B1C62200DB2EB0 /* AccountApi.swift in Sources */,
 				53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */,
+				F0E0CAB522B1D4BB00DB2EB0 /* RegisterOwnerViewController.swift in Sources */,
+				F0E0CAB922B207F100DB2EB0 /* RegisterRoomerViewController.swift in Sources */,
 				53458945229D967200FF8AE1 /* Participant.swift in Sources */,
 				5315D38B229A3C5D007D31C4 /* rumi.xcdatamodeld in Sources */,
+				F0E0CAB322B1D13D00DB2EB0 /* RegisterResponse.swift in Sources */,
 				53458943229D965000FF8AE1 /* Group.swift in Sources */,
+				F0E0CAA522B1C3BD00DB2EB0 /* LoginOwnerViewController.swift in Sources */,
+				F0E0CAAF22B1C7B200DB2EB0 /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
