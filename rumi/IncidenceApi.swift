@@ -19,9 +19,14 @@ class incidenceApi {
     
 
     static let baseUrl = "https://rumiapi.azurewebsites.net/api/"
-    static let groupsUrl = "\(baseUrl)/groups"
-    static let getIncidenceByGroupUrl = "\(baseUrl)/groups/5ceff7b6d4274235b808de7b/incidences"
+    static let getGroupUrl = "\(baseUrl)/groups"
     
+    
+    static let getIncidenceByGroupUrl = "\(baseUrl)/groups"
+    
+    
+    
+     static let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2VmZjcyZWQ0Mjc0MjM1YjgwOGRlNzkiLCJqdGkiOiJlZTA5NWI5ZS1hNmQ4LTQzYmQtODc3Zi1iMGE5ZTAwOGZiMmUiLCJuYW1laWQiOiJEOEJGMDU0RSIsInJvbGUiOiJST09NRVIiLCJMb2dnZWRPbiI6IjYvMjUvMjAxOSA0OjI4OjU2IFBNIiwibmJmIjoxNTYxNDgwMTM2LCJleHAiOjE1NjIwODQ5MzYsImlhdCI6MTU2MTQ4MDEzNiwiaXNzIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20ifQ.qaGVJu_xN51ymtjGp4BavI-SyUNgkP11klxWSrM_ACk"
     
     
     static private func getIncidences(
@@ -40,9 +45,12 @@ class incidenceApi {
             
         }
         
+        
+        
+        
+        
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2VmZjcyZWQ0Mjc0MjM1YjgwOGRlNzkiLCJqdGkiOiI1NDM0NTYxYS1jMzkyLTRmYmMtYTdhMi1jNzU4ZWRjZmNjZDAiLCJuYW1laWQiOiJEOEJGMDU0RSIsInJvbGUiOiJST09NRVIiLCJMb2dnZWRPbiI6IjYvMjQvMjAxOSAyOjQzOjQzIEFNIiwibmJmIjoxNTYxMzQ0MjIzLCJleHAiOjE1NjE5NDkwMjMsImlhdCI6MTU2MTM0NDIyMywiaXNzIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20ifQ.oRiKHXj7KFdtlUZahqQZklnmrTtN6fJBam0NGzwcEqI"
-            
+            "Authorization": "Bearer  \(token)"
         ]
         
         
@@ -79,18 +87,95 @@ class incidenceApi {
     
     
     
+    static private func getGroupId(
+        
+        
+        from urlString: String,
+        responseType: GroupsResponse.Type,
+        responseHandler: @escaping(((GroupsResponse)->(Void))),
+        errorHandler: @escaping ((Error)->Void)){
+        
+        //validar url
+        guard  let url = URL(string: urlString)else{
+            let message = "Error on URL"
+            os_log("%@",message)
+            return
+            
+        }
+        
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer  \(token)"
+        ]
+        
+        
+        //make a request
+        Alamofire.request(url,headers: headers)
+            .validate()
+            .responseJSON(completionHandler: {response in
+                switch response.result {
+                case.success(_):
+                    
+                    do {
+                        let decoder = JSONDecoder()
+                        if let data = response.data{
+                            
+                            let dataResponse = try decoder.decode(GroupsResponse.self,from:data)
+                            responseHandler(dataResponse)
+                        }
+                        
+                    }catch{
+                        errorHandler(error)
+                        
+                        
+                    }
+                    
+                case .failure(let error):
+                    errorHandler(error)
+                }
+                
+                
+            })
+        
+        
+    }
+    
+    
+    
+    
+    
     static func getIncidencesListGroup(
         
+        idgroup: String,
         responseHandler:  @escaping ((IncidencesResponse)->(Void)),
         errorHandler: @escaping ((Error)-> Void)){
         
+        let idgrouprecive = "\(getIncidenceByGroupUrl)/"+idgroup+"/incidences"
+        //let getIncidenceByGroupUrl2 = "\(idgrouprecive)/incidences"
+        
+        
         self.getIncidences(
-            from: getIncidenceByGroupUrl,
+            from: idgrouprecive,
             responseType: IncidencesResponse.self,
             responseHandler: responseHandler,
             errorHandler: errorHandler)
         
     }
+    
+    
+    static func getGroupId(
+        
+        responseHandler:  @escaping ((GroupsResponse)->(Void)),
+        errorHandler: @escaping ((Error)-> Void)){
+        
+        self.getGroupId(
+            from: getGroupUrl,
+            responseType: GroupsResponse.self,
+            responseHandler: responseHandler,
+            errorHandler: errorHandler)
+        
+    }
+    
+    
     
     
 

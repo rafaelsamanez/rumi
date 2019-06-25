@@ -12,12 +12,7 @@ import Foundation
 struct Participant: Codable {
     var name: String?
     var surname: String?
-    var phone: String?
     var gender: String?
-    var birthdate: String?
-    var image: String?
-    var description: String?
-    var occupation: String?
     var score: Int?
     
 }

@@ -29,6 +29,7 @@
 		5385DC7022C0A2C1003A9E02 /* CreateIncidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385DC6F22C0A2C1003A9E02 /* CreateIncidenceViewController.swift */; };
 		538C21AF22C1D896004302BA /* IncidenceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C21AE22C1D896004302BA /* IncidenceRequest.swift */; };
 		539569FA22BF43BE00ED10F2 /* Incidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539569F922BF43BE00ED10F2 /* Incidence.swift */; };
+		53E38C2D22C297830000A297 /* GroupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C2C22C297830000A297 /* GroupsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		5385DC6F22C0A2C1003A9E02 /* CreateIncidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIncidenceViewController.swift; sourceTree = "<group>"; };
 		538C21AE22C1D896004302BA /* IncidenceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidenceRequest.swift; sourceTree = "<group>"; };
 		539569F922BF43BE00ED10F2 /* Incidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incidence.swift; sourceTree = "<group>"; };
+		53E38C2C22C297830000A297 /* GroupsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				5385DC3A22C044FF003A9E02 /* IncidenceResponse.swift */,
 				5385DC3C22C04793003A9E02 /* IncidenceApi.swift */,
 				5385DC6D22C09689003A9E02 /* CreateIncidenceApi.swift */,
+				53E38C2C22C297830000A297 /* GroupsResponse.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				5385DC6C22C05B56003A9E02 /* IncidenceViewController.swift in Sources */,
 				53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */,
 				53458945229D967200FF8AE1 /* Participant.swift in Sources */,
+				53E38C2D22C297830000A297 /* GroupsResponse.swift in Sources */,
 				5385DC7022C0A2C1003A9E02 /* CreateIncidenceViewController.swift in Sources */,
 				5315D38B229A3C5D007D31C4 /* rumi.xcdatamodeld in Sources */,
 				5385DC2C22C03779003A9E02 /* IncidencesViewController.swift in Sources */,

@@ -18,7 +18,7 @@ class CreateincidenceApi {
     static let baseUrl = "https://rumiapi.azurewebsites.net/api/"
     static let groupsUrl = "\(baseUrl)/groups"
     static let CreateIncidence = "\(baseUrl)/incidences"
-    static let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2VmZjcyZWQ0Mjc0MjM1YjgwOGRlNzkiLCJqdGkiOiIyOTllYTFjYi1jZDI2LTQ4YjUtODY3Ni1iOWRjZjQwOTkwMGYiLCJuYW1laWQiOiJEOEJGMDU0RSIsInJvbGUiOiJST09NRVIiLCJMb2dnZWRPbiI6IjYvMjUvMjAxOSA2OjQ5OjU1IEFNIiwibmJmIjoxNTYxNDQ1Mzk1LCJleHAiOjE1NjIwNTAxOTUsImlhdCI6MTU2MTQ0NTM5NSwiaXNzIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20ifQ.6Mkndj9t--gxMCTuZuyQad_oGPirMZlkvdyzO3PT_qI"
+    static let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Y2VmZjcyZWQ0Mjc0MjM1YjgwOGRlNzkiLCJqdGkiOiJlZTA5NWI5ZS1hNmQ4LTQzYmQtODc3Zi1iMGE5ZTAwOGZiMmUiLCJuYW1laWQiOiJEOEJGMDU0RSIsInJvbGUiOiJST09NRVIiLCJMb2dnZWRPbiI6IjYvMjUvMjAxOSA0OjI4OjU2IFBNIiwibmJmIjoxNTYxNDgwMTM2LCJleHAiOjE1NjIwODQ5MzYsImlhdCI6MTU2MTQ4MDEzNiwiaXNzIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20ifQ.qaGVJu_xN51ymtjGp4BavI-SyUNgkP11klxWSrM_ACk"
     
     
     static private func CreateIncidence(

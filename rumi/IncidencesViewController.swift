@@ -16,17 +16,49 @@ class IncidencesViewController: UICollectionViewController {
     var incidences : [Incidence] = [Incidence]()
     var currentRow = 0
     
+    var group : [Group] = [Group]()
+    
+    let idGroup = "5ceff7b6d4274235b808de7b"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         incidenceApi.getIncidencesListGroup(
+            idgroup: idGroup,
             responseHandler: handleResponse,
             errorHandler: handleError)
         
+        incidenceApi.getGroupId(
+            responseHandler: handleResponseId,
+            errorHandler: handleErrorId)
+        
+        
+        
     }
 
+    
+    func handleResponseId(groups: [Group]?){
+        if let group = groups{
+            
+            self.group = groups!
+            self.collectionView.reloadData()
+        }
+        
+    }
+    
+    func handleErrorId(error:Error){
+        
+        let message = "Error on get IdGroup Request:  \(error.localizedDescription)"
+        
+        os_log("%@",message)
+        
+    }
+    
+    
+    
+    
+    
     func handleResponse(incidencias: [Incidence]?){
         if let incidences = incidencias{
             
@@ -45,6 +77,11 @@ class IncidencesViewController: UICollectionViewController {
     }
     
 
+    
+    
+    
+    
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
