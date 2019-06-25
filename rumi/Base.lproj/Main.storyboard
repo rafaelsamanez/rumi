@@ -147,18 +147,31 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMc-AE-dYf">
+                                            <rect key="frame" x="156" y="109" width="238" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="238" id="o4h-XG-CGJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="gA7-Tf-roh" firstAttribute="leading" secondItem="BVu-xR-kse" secondAttribute="trailing" constant="30" id="4Oh-Cn-8ng"/>
                                     <constraint firstItem="gA7-Tf-roh" firstAttribute="top" secondItem="mI0-cj-vTb" secondAttribute="top" constant="28" id="6Qu-oU-4YS"/>
                                     <constraint firstItem="BVu-xR-kse" firstAttribute="top" secondItem="mI0-cj-vTb" secondAttribute="top" constant="36" id="AsX-1X-3sa"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="tMc-AE-dYf" secondAttribute="bottom" constant="12" id="F8J-2h-gvr"/>
                                     <constraint firstItem="gA7-Tf-roh" firstAttribute="leading" secondItem="BVu-xR-kse" secondAttribute="trailing" constant="30" id="Fag-ZK-KZj"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="tMc-AE-dYf" secondAttribute="trailing" constant="12" id="Lgh-77-OE6"/>
+                                    <constraint firstItem="tMc-AE-dYf" firstAttribute="leading" secondItem="BVu-xR-kse" secondAttribute="trailing" constant="24" id="NBh-Te-wm1"/>
                                     <constraint firstItem="gA7-Tf-roh" firstAttribute="top" secondItem="mI0-cj-vTb" secondAttribute="top" constant="28" id="UVl-PU-yTW"/>
                                     <constraint firstItem="BVu-xR-kse" firstAttribute="leading" secondItem="mI0-cj-vTb" secondAttribute="leading" constant="46" id="YhK-tY-Eff"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="gA7-Tf-roh" id="QLx-Sd-J3d"/>
+                                    <outlet property="namegroupLabel" destination="tMc-AE-dYf" id="Quk-JC-KCi"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -223,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYH-Gh-LWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358" y="635"/>
+            <point key="canvasLocation" x="3357.971014492754" y="634.82142857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MZ9-zI-c6B">

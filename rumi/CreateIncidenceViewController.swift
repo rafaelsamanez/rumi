@@ -32,7 +32,7 @@ class CreateIncidenceViewController: UIViewController {
         
         newincidence.description = title
         
-        CreateincidenceApi.CreateIncidence(
+        incidenceApi.CreateIncidence(
             incidenceRequest: Incidencerequest(groupId: "hola", description: title),
             responseHandler: handleResponse,
             errorHandler: handleError)

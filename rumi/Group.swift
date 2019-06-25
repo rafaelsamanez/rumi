@@ -15,8 +15,7 @@ struct Group: Codable {
     var name: String?
     var owner: String?
     var participants: ParticipantsResponse
-    var image: String?
-    var active: Bool?
+   
     
  
 }

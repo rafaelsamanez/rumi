@@ -16,36 +16,68 @@ class IncidencesViewController: UICollectionViewController {
     var incidences : [Incidence] = [Incidence]()
     var currentRow = 0
     
-    var group : [Group] = [Group]()
+    var groups : [Group] = [Group]()
     
-    let idGroup = "5ceff7b6d4274235b808de7b"
     
+    //aca se ingresa el id del grupo
+    var idGroup = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        incidenceApi.getIncidencesListGroup(
-            idgroup: idGroup,
-            responseHandler: handleResponse,
-            errorHandler: handleError)
+        
+        
+        idGroup = getGroupId()
+        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        getIncidencesByGroup()
+    }
+    
+    
+    
+    //esta funcion carga el id del grupo , estaria en el login.
+    func getGroupId() -> String{
         
         incidenceApi.getGroupId(
             responseHandler: handleResponseId,
             errorHandler: handleErrorId)
         
+        //idGroup =  "5ceff7b6d4274235b808de7b"
+        return idGroup
         
+    }
+    
+    
+    
+    func getIncidencesByGroup(){
+        
+        //self.idGroup = groups[0].groupId!
+        
+        idGroup = getGroupId()
+        
+        
+        incidenceApi.getIncidencesListGroup(
+            idgroup: idGroup,
+            responseHandler: handleResponse,
+            errorHandler: handleError)
         
     }
 
     
-    func handleResponseId(groups: [Group]?){
-        if let group = groups{
-            
-            self.group = groups!
-            self.collectionView.reloadData()
-        }
+    func handleResponseId(response: GroupsResponse){
+        
+        self.groups = response
+        
+        self.idGroup = response[0].groupId!
+        
+        self.collectionView.reloadData()
         
     }
+    
     
     func handleErrorId(error:Error){
         
@@ -54,9 +86,6 @@ class IncidencesViewController: UICollectionViewController {
         os_log("%@",message)
         
     }
-    
-    
-    
     
     
     func handleResponse(incidencias: [Incidence]?){
@@ -70,7 +99,7 @@ class IncidencesViewController: UICollectionViewController {
     
     func handleError(error:Error){
         
-        let message = "Error on Organizer Request:  \(error.localizedDescription)"
+        let message = "Error on Incidences Request:  \(error.localizedDescription)"
         
         os_log("%@",message)
         
@@ -97,6 +126,11 @@ class IncidencesViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! IncidenceCell
         
         cell.update(from : incidences[indexPath.row])
+        cell.updateGroup(from: groups[0])
+        
+        
+        
+        
         return cell
     }
 
