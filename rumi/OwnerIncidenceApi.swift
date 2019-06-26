@@ -236,8 +236,8 @@ static func getGroupId(
         
         let parameters: Parameters = [
             
-            "Resolved": incidenceUpdateRequest.Resolved!,
-            "Response": incidenceUpdateRequest.Response!
+            "Resolved": false,
+            "Response": "hola"
         ]
         
         let UpdateIncidenceURL = "\(CreateIncidence)/"+idIncidence
