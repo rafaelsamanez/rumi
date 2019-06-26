@@ -25,11 +25,16 @@
 		5385DC6622C05638003A9E02 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5385DC4B22C0555B003A9E02 /* Alamofire.framework */; };
 		5385DC6722C05638003A9E02 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5385DC4B22C0555B003A9E02 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5385DC6C22C05B56003A9E02 /* IncidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385DC6B22C05B56003A9E02 /* IncidenceViewController.swift */; };
-		5385DC6E22C09689003A9E02 /* CreateIncidenceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385DC6D22C09689003A9E02 /* CreateIncidenceApi.swift */; };
 		5385DC7022C0A2C1003A9E02 /* CreateIncidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385DC6F22C0A2C1003A9E02 /* CreateIncidenceViewController.swift */; };
 		538C21AF22C1D896004302BA /* IncidenceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C21AE22C1D896004302BA /* IncidenceRequest.swift */; };
 		539569FA22BF43BE00ED10F2 /* Incidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539569F922BF43BE00ED10F2 /* Incidence.swift */; };
 		53E38C2D22C297830000A297 /* GroupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C2C22C297830000A297 /* GroupsResponse.swift */; };
+		53E38C3722C2ED2E0000A297 /* OwnerIncident.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E38C3622C2ED2E0000A297 /* OwnerIncident.storyboard */; };
+		53E38C3B22C2F2E30000A297 /* OwnerIncidencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C3A22C2F2E30000A297 /* OwnerIncidencesViewController.swift */; };
+		53E38C3D22C2FE1F0000A297 /* OwnerIncidenceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C3C22C2FE1F0000A297 /* OwnerIncidenceApi.swift */; };
+		53E38C4122C301830000A297 /* OwnerIncidenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4022C301830000A297 /* OwnerIncidenceCell.swift */; };
+		53E38C4322C304730000A297 /* OwnerIncidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4222C304730000A297 /* OwnerIncidenceViewController.swift */; };
+		53E38C4522C3240F0000A297 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4422C3240F0000A297 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,11 +148,16 @@
 		5385DC3C22C04793003A9E02 /* IncidenceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidenceApi.swift; sourceTree = "<group>"; };
 		5385DC3F22C0555B003A9E02 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		5385DC6B22C05B56003A9E02 /* IncidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidenceViewController.swift; sourceTree = "<group>"; };
-		5385DC6D22C09689003A9E02 /* CreateIncidenceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIncidenceApi.swift; sourceTree = "<group>"; };
 		5385DC6F22C0A2C1003A9E02 /* CreateIncidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIncidenceViewController.swift; sourceTree = "<group>"; };
 		538C21AE22C1D896004302BA /* IncidenceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidenceRequest.swift; sourceTree = "<group>"; };
 		539569F922BF43BE00ED10F2 /* Incidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incidence.swift; sourceTree = "<group>"; };
 		53E38C2C22C297830000A297 /* GroupsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsResponse.swift; sourceTree = "<group>"; };
+		53E38C3622C2ED2E0000A297 /* OwnerIncident.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OwnerIncident.storyboard; sourceTree = "<group>"; };
+		53E38C3A22C2F2E30000A297 /* OwnerIncidencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerIncidencesViewController.swift; sourceTree = "<group>"; };
+		53E38C3C22C2FE1F0000A297 /* OwnerIncidenceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerIncidenceApi.swift; sourceTree = "<group>"; };
+		53E38C4022C301830000A297 /* OwnerIncidenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerIncidenceCell.swift; sourceTree = "<group>"; };
+		53E38C4222C304730000A297 /* OwnerIncidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerIncidenceViewController.swift; sourceTree = "<group>"; };
+		53E38C4422C3240F0000A297 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,8 +245,8 @@
 				53458946229D9E5300FF8AE1 /* ParticipantsResponse.swift */,
 				5385DC3A22C044FF003A9E02 /* IncidenceResponse.swift */,
 				5385DC3C22C04793003A9E02 /* IncidenceApi.swift */,
-				5385DC6D22C09689003A9E02 /* CreateIncidenceApi.swift */,
 				53E38C2C22C297830000A297 /* GroupsResponse.swift */,
+				53E38C3C22C2FE1F0000A297 /* OwnerIncidenceApi.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -269,6 +279,7 @@
 				5315D386229A3C5D007D31C4 /* Main.storyboard */,
 				5315D38C229A3C5F007D31C4 /* Assets.xcassets */,
 				5315D38E229A3C5F007D31C4 /* LaunchScreen.storyboard */,
+				53E38C3622C2ED2E0000A297 /* OwnerIncident.storyboard */,
 			);
 			name = Resource;
 			path = rumi;
@@ -281,6 +292,10 @@
 				5385DC2B22C03779003A9E02 /* IncidencesViewController.swift */,
 				5385DC6B22C05B56003A9E02 /* IncidenceViewController.swift */,
 				5385DC6F22C0A2C1003A9E02 /* CreateIncidenceViewController.swift */,
+				53E38C3A22C2F2E30000A297 /* OwnerIncidencesViewController.swift */,
+				53E38C4022C301830000A297 /* OwnerIncidenceCell.swift */,
+				53E38C4222C304730000A297 /* OwnerIncidenceViewController.swift */,
+				53E38C4422C3240F0000A297 /* UIImageViewExtension.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -470,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E38C3722C2ED2E0000A297 /* OwnerIncident.storyboard in Resources */,
 				5315D390229A3C5F007D31C4 /* LaunchScreen.storyboard in Resources */,
 				5315D38D229A3C5F007D31C4 /* Assets.xcassets in Resources */,
 				5315D388229A3C5D007D31C4 /* Main.storyboard in Resources */,
@@ -502,9 +518,12 @@
 				538C21AF22C1D896004302BA /* IncidenceRequest.swift in Sources */,
 				5315D383229A3C5D007D31C4 /* AppDelegate.swift in Sources */,
 				539569FA22BF43BE00ED10F2 /* Incidence.swift in Sources */,
+				53E38C3B22C2F2E30000A297 /* OwnerIncidencesViewController.swift in Sources */,
+				53E38C4122C301830000A297 /* OwnerIncidenceCell.swift in Sources */,
 				5385DC3B22C044FF003A9E02 /* IncidenceResponse.swift in Sources */,
-				5385DC6E22C09689003A9E02 /* CreateIncidenceApi.swift in Sources */,
+				53E38C3D22C2FE1F0000A297 /* OwnerIncidenceApi.swift in Sources */,
 				5385DC6C22C05B56003A9E02 /* IncidenceViewController.swift in Sources */,
+				53E38C4522C3240F0000A297 /* UIImageViewExtension.swift in Sources */,
 				53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */,
 				53458945229D967200FF8AE1 /* Participant.swift in Sources */,
 				53E38C2D22C297830000A297 /* GroupsResponse.swift in Sources */,
@@ -512,6 +531,7 @@
 				5315D38B229A3C5D007D31C4 /* rumi.xcdatamodeld in Sources */,
 				5385DC2C22C03779003A9E02 /* IncidencesViewController.swift in Sources */,
 				5385DC3822C04247003A9E02 /* Profile.swift in Sources */,
+				53E38C4322C304730000A297 /* OwnerIncidenceViewController.swift in Sources */,
 				53458943229D965000FF8AE1 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

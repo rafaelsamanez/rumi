@@ -17,6 +17,7 @@ class IncidenceViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
+    
     var incidence: Incidence?
     
     override func viewDidAppear(_ animated: Bool) {

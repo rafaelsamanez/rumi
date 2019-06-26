@@ -15,9 +15,6 @@ struct Profile: Codable {
     var profileId : String?
     var name: String?
     var surname: String?
-
     var gender: String?
-
-
     var score: Int?
 }

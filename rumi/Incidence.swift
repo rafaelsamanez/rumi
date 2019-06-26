@@ -13,8 +13,17 @@ struct Incidence: Codable {
     var incidenceId: String?
     var groupId: String?
     var description: String?
-   
+    var profile : Profile
   
+    var resolved :Bool?
     
+    var isResolved: Bool {
+        get {
+            return resolved!
+        }
+        set {
+            resolved = true
+        }
+    }
     
 }
