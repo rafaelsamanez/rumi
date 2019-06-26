@@ -70,7 +70,7 @@ class OwnerIncidenceViewController: UIViewController {
 
         nameLabel.text = incidence?.profile.name
         descriptionLabel.text = incidence?.description
-        isCheck = (incidence?.isResolved)!
+        isCheck = (incidence?.resolved)!
         updateImage(for: checkButton)
     }
     

@@ -82,7 +82,7 @@
                                     <action selector="sendUpdate:" destination="0up-ga-Qkj" eventType="touchUpInside" id="QI7-3b-C4C"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-pk-n08">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tool" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-pk-n08">
                                 <rect key="frame" x="20" y="98" width="128" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="HVT-7z-JX9"/>
@@ -192,7 +192,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="408" height="182"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-4d-CxE">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tool" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-4d-CxE">
                                             <rect key="frame" x="12" y="20" width="162" height="142"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="142" id="EyK-FE-PiH"/>
@@ -288,6 +288,6 @@
     </scenes>
     <resources>
         <image name="checkFalse" width="32" height="32"/>
-        <image name="group" width="24" height="24"/>
+        <image name="tool" width="64" height="64"/>
     </resources>
 </document>

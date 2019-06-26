@@ -129,7 +129,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="BVu-xR-kse">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tool" translatesAutoresizingMaskIntoConstraints="NO" id="BVu-xR-kse">
                                             <rect key="frame" x="46" y="36" width="86" height="78"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="78" id="2Mk-ue-FEz"/>
@@ -203,7 +203,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBi-Oi-dGs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tool" translatesAutoresizingMaskIntoConstraints="NO" id="mBi-Oi-dGs">
                                 <rect key="frame" x="87" y="126" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="MVI-gd-dfV"/>
@@ -297,7 +297,7 @@
     </scenes>
     <resources>
         <image name="add" width="32" height="32"/>
-        <image name="group" width="24" height="24"/>
         <image name="info" width="30" height="30"/>
+        <image name="tool" width="64" height="64"/>
     </resources>
 </document>
