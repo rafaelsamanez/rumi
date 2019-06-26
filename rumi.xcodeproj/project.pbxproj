@@ -35,6 +35,7 @@
 		53E38C4122C301830000A297 /* OwnerIncidenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4022C301830000A297 /* OwnerIncidenceCell.swift */; };
 		53E38C4322C304730000A297 /* OwnerIncidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4222C304730000A297 /* OwnerIncidenceViewController.swift */; };
 		53E38C4522C3240F0000A297 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4422C3240F0000A297 /* UIImageViewExtension.swift */; };
+		53E38C4722C341D80000A297 /* IncidenceUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E38C4622C341D80000A297 /* IncidenceUpdateRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +159,7 @@
 		53E38C4022C301830000A297 /* OwnerIncidenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerIncidenceCell.swift; sourceTree = "<group>"; };
 		53E38C4222C304730000A297 /* OwnerIncidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerIncidenceViewController.swift; sourceTree = "<group>"; };
 		53E38C4422C3240F0000A297 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		53E38C4622C341D80000A297 /* IncidenceUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidenceUpdateRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				53458944229D967200FF8AE1 /* Participant.swift */,
 				539569F922BF43BE00ED10F2 /* Incidence.swift */,
 				5385DC3722C04247003A9E02 /* Profile.swift */,
+				53E38C4622C341D80000A297 /* IncidenceUpdateRequest.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				53E38C3D22C2FE1F0000A297 /* OwnerIncidenceApi.swift in Sources */,
 				5385DC6C22C05B56003A9E02 /* IncidenceViewController.swift in Sources */,
 				53E38C4522C3240F0000A297 /* UIImageViewExtension.swift in Sources */,
+				53E38C4722C341D80000A297 /* IncidenceUpdateRequest.swift in Sources */,
 				53458947229D9E5300FF8AE1 /* ParticipantsResponse.swift in Sources */,
 				53458945229D967200FF8AE1 /* Participant.swift in Sources */,
 				53E38C2D22C297830000A297 /* GroupsResponse.swift in Sources */,

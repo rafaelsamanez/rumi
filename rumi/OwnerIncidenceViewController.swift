@@ -8,6 +8,9 @@
 
 import UIKit
 
+import os
+
+
 class OwnerIncidenceViewController: UIViewController {
 
     var isCheck = false
@@ -22,9 +25,32 @@ class OwnerIncidenceViewController: UIViewController {
     @IBOutlet weak var checkImageView: UIImageView!
     @IBOutlet weak var checkButton: UIButton!
     
+    var incidence: Incidence?
+    
     @IBAction func sendUpdate(_ sender: Any) {
         
         
+        OwnerIncidenceApi.UpdateIncidence(
+            //idIncidence: (incidence?.incidenceId)!,
+            idIncidence: "5d12b3114dc83453c01cfb27",
+            incidenceUpdateRequest: IncidenceUpdaterequest(resolved: false, response: "La incidencia ha sido resuelta"),
+            responseHandler: handleResponse,
+            errorHandler: handleError)
+            
+        
+        
+    }
+    
+    func handleResponse(incidente: Incidence?){
+        
+    }
+    
+    
+    func handleError(error:Error){
+        
+        let message = "Error on Organizer Request:  \(error.localizedDescription)"
+        
+        os_log("%@",message)
         
     }
     
@@ -36,7 +62,7 @@ class OwnerIncidenceViewController: UIViewController {
     
     
     
-     var incidence: Incidence?
+    
     
     
     override func viewDidLoad() {
@@ -44,6 +70,7 @@ class OwnerIncidenceViewController: UIViewController {
 
         nameLabel.text = incidence?.profile.name
         descriptionLabel.text = incidence?.description
+        isCheck = (incidence?.isResolved)!
         updateImage(for: checkButton)
     }
     

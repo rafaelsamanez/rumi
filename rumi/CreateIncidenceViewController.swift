@@ -26,11 +26,8 @@ class CreateIncidenceViewController: UIViewController {
         
         
         
-        var newincidence = Incidencerequest(groupId: "144", description: title)
-        
-        
-        
-        newincidence.description = title
+        //var newincidence = Incidencerequest(groupId: "144", description: title)
+       // newincidence.description = title
         
         incidenceApi.CreateIncidence(
             incidenceRequest: Incidencerequest(groupId: "hola", description: title),
